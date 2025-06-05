@@ -1,0 +1,232 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f3e9;
+    color: #5a3e2b;
+    line-height: 1.6;
+}
+
+
+header {
+    background: #8b5a2b;
+    color: white;
+    text-align: center;
+    padding: 30px 0 20px;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    border: 2px solid #f9f3e9;
+    border-radius: 50%;
+    padding: 3px;
+    background: white;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin: 5px 0;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.eslogan {
+    font-style: italic;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+
+nav {
+    background: #5a3e2b;
+    padding: 12px;
+    text-align: center;
+
+     position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f5d742;
+}
+
+
+.banner img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center 30%;
+}
+
+
+.nosotros {
+    padding: 50px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.historia {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.historia img {
+    width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.mision-vision {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+
+.valores {
+    margin-top: 40px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.valores h3 {
+    text-align: center;
+    color: #8b5a2b;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.valores ul {
+    list-style-type: none;
+    padding: 0;
+    columns: 2;
+    column-gap: 30px;
+}
+
+.valores li {
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+    break-inside: avoid;
+    line-height: 1.6;
+}
+
+.valores li::before {
+    content: "☕";
+    position: absolute;
+    left: 0;
+    color: #8b5a2b;
+}
+
+
+@media (max-width: 768px) {
+    .valores ul {
+        columns: 1;
+    }
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 50px 5%;
+    background: #fff5e6;
+}
+
+.item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+}
+
+.item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.precio {
+    color: #8b5a2b;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+
+.ubicacion {
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.mapa {
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.direccion {
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+
+footer {
+    background: #5a3e2b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+
+@media (max-width: 768px) {
+    .historia {
+        flex-direction: column;
+    }
+    
+    .historia img {
+        width: 100%;
+    }
+    
+    .mision-vision {
+        flex-direction: column;
+    }
+    
+    .menu {
+        grid-template-columns: 1fr;
+    }
+}
